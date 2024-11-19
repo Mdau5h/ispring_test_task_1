@@ -1,0 +1,21 @@
+version: '3'
+services:
+  test_app:
+    env_file:
+      - ./.env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/ispring_test_ui/
+      - ./allure_res/:/allure_res/
+  allure:
+    image: "frankescobar/allure-docker-service"
+    environment:
+      CHECK_RESULTS_EVERY_SECONDS: NONE
+      KEEP_HISTORY: 1
+    ports:
+      - "5050:5050"
+    volumes:
+      - ./allure_res:/app/allure-results
+      - ./allure_res:/app/default-reports
