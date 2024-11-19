@@ -6,9 +6,11 @@ name = "pypi"
 [packages]
 python-dotenv = "==1.0.*"
 pydantic = "==1.10.*"
-pytest = "==7.1.2"
-playwright = "*"
-pytest-playwright = "*"
+pytest = "==7.1.*"
+playwright = "==1.48.*"
+pytest-playwright = "==0.5.*"
+allure = "*"
+allure-pytest = "==2.13.*"
 
 [dev-packages]
 
