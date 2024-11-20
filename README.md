@@ -4,18 +4,19 @@
 - Установить Python 3.11:
 https://www.python.org/downloads/
 
-- Проверить версию Python
+- Проверить версию Python:
 ```sh
 python3 --version
 ```
 - Перейти в директорию проекта
-- Установить зависимости
+- Установить зависимости:
 ```sh
 pip install -U pip setuptools pipenv && pipenv install
  ```
-- Установить веб-драйвер
+- Установить веб-драйвер и необходимые библиотеки:
 ```sh
 playwright install chromium
+playwright install-deps
  ```
 
 
@@ -24,7 +25,7 @@ playwright install chromium
 ```sh
 pytest --alluredir=allure_res ./tests
 ```
-Для запуска с отображением окна браузера используйте тэг  `````--headed`````
+Для запуска с отображением окна браузера используйте тэг  `````--headed`````:
 ```sh
 pytest --alluredir=allure_res ./tests --headed
 ```
