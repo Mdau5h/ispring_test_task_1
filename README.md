@@ -31,11 +31,11 @@ playwright install-deps
 ## Запуск тестов
 Запуск тестов производится из директории проекта:
 ```sh
-pytest --alluredir=allure_res ./tests
+pytest --alluredir=allure_res ./tests -v -s
 ```
 Для запуска с отображением окна браузера используйте тэг  `````--headed`````:
 ```sh
-pytest --alluredir=allure_res ./tests --headed
+pytest --alluredir=allure_res ./tests -v -s --headed
 ```
 
 
