@@ -9,6 +9,14 @@ https://www.python.org/downloads/
 python3 --version
 ```
 - Перейти в директорию проекта
+- Убедиться в наличии файла ```.env``` в корневой директории проекта. Пример:
+
+```
+BASE_URL=https://github.com/login
+AUTH_LOGIN=test_user123123@gmail.com
+AUTH_PASS=testpass123123!@#
+```
+   
 - Установить зависимости:
 ```sh
 pip install -U pip setuptools pipenv && pipenv install
